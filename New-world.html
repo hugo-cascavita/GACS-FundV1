@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Office</title>
+    <style>
+        /* Basic CSS for styling the virtual office */
+        body {
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .office {
+            background-color: #fff;
+            width: 1600px;
+            height: 875px;
+            border: 1px solid #000;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .individual-office {
+            background-image: url('wood.jpeg'); /* Set the background image */
+            background-size: cover; /* Cover the entire container */
+            width: 300px;
+            height: 850px;
+            text-align: center;
+            float: left;
+            border: 5px solid #000;
+            position: relative; /* Add relative positioning for window and name tags divs */
+        }
+        
+        .nametags {
+            font-size: 20px;
+            background-color: white; 
+            width: 100%;
+            height: 60px; /* Adjust the name tags height as needed */
+            position: absolute; /* Position it absolutely at the top */
+            align-content: center;
+            left: 0;
+            z-index: 1; /* Set a higher z-index to place it above the window */
+            border-bottom: 1px solid black;
+            
+        }
+
+        .office-window {
+            background-color: lightblue; /* Light blue color for the window */
+            width: 100%;
+            height: 300px; /* Adjust the window height as needed */
+            position: absolute; /* Position it absolutely at the top */
+            align-content: center;
+            border-bottom: 1px solid black;
+        }
+        .textbox {
+            background-color: whitesmoke; /* Light green color for the bottom div */
+            width: 100%;
+            height: 450px; /* Adjust the height as needed */
+            position: absolute; /* Position it absolutely at the bottom */
+            bottom: 0;
+            border-top: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="office">
+        <div class="individual-office">
+            <div class="nametags"><strong>Portfolio Manager</strong></div>
+            <div class="office-window"></div>
+            <div class="textbox"></div>
+        </div>
+        <div class="individual-office">
+            <div class="nametags"><strong>Research Analyst</strong></div>
+            <div class="office-window"></div>
+            <div class="textbox"></div>
+        </div>
+        <div class="individual-office">
+            <div class="nametags"><strong>Research Analyst</strong></div>
+            <div class="office-window"></div>
+            <div class="textbox"></div>
+        </div>
+        <div class="individual-office">
+            <div class="nametags"><strong>Quant</strong></div>
+            <div class="office-window"></div>
+            <div class="textbox"></div>
+        </div>
+        <div class="individual-office">
+            <div class="nametags"><strong>Prompter</strong></div>
+            <div class="office-window"></div>
+            <div class="textbox"></div>
+        </div>
+    </div>
+</body>
+</html>
+
+
